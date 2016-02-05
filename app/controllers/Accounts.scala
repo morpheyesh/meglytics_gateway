@@ -23,11 +23,14 @@ import scalaz.Validation.FlatMap._
 import io.megam.auth.funnel._
 import io.megam.auth.funnel.FunnelErrors._
 import play.api.mvc._
+
+
 /*
  * This controller performs onboarding a customer and registers an email/api_key
  * into riak
  * Output: FunnelResponse as JSON with the msg.
  */
+ 
 object Accounts extends Controller with stack.APIAuthElement {
 
   /*
